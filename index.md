@@ -6,9 +6,13 @@ description:
 permalink: /
 ---
 
-## Spoiled Apples Ruin the Bunch: Anatomy of Google Play Malware
+## Kuber: Cost-Efficient Microservice Deployment Planner
 
-Due to the rising popularity of smart phones, malware in the Android field has been increasing exponentially. With this rise, malware has increasingly evolved to bypass the defenses of the Google Play Store. Analyzing properties of such malware is an important step towards our ability to build efficient malware detection tools. In this study, we perform a detailed analysis on a set of recent Android malware bypassing the defenses of Google Play Store between 2016 to 2021. In particular, we collect event and check conditions, hiding techniques, payloads, as well as code properties of the malware. We further relate the properties into a detailed malware signature graph. Lastly, we discussed the implications of our findings to the space of malware detection in context with our collected dataset.
+The microservice-based architecture – a SOA-inspired principle of dividing backend systems into independently deployed components that communicate with each other using language-agnostic APIs – has gained increased popularity in industry. Realistic microservice-based applications contain hundreds of services deployed on a cloud. As cloud providers typically offer a variety of virtual machine (VM) types, each with its own hardware specification and cost, picking a proper cloud configuration for deploying all microservices in a way that satisfies performance targets while minimizing the deployment costs becomes challenging.
+Existing work focuses on identifying the best VM types for recurrent (mostly high-performance computing) jobs in an economical manner. Yet, identifying the best VM type for the myriad
+of all possible service combinations and further identifying the optimal subset of combinations that minimizes deployment cost is an intractable problem for applications with a large number of
+services. To address this problem, we propose an approach, called KUBER, which utilizes a set of strategies to efficiently sample the necessary subset of service combination and VM types to explore.
+Comparing KUBER with baseline approaches shows that KUBER is able to find the best deployment with the lowest search cost.
 
 ---
 
