@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Malware Collection
+title: Results
 nav_order: 1
 has_children: false
-permalink: /docs/malwarecollection
+permalink: /docs/results
 ---
 
 # Malware Collection
