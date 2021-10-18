@@ -6,14 +6,14 @@ has_children: false
 permalink: /docs/benchmarks
 ---
 
-# Flow-Based Malware Signatures
+# Benchmarks Used in Evaluation
 ---
 
 Within this section, we provide the our benchmark applications that are modified with traces to calculate execution time.
 
 |Benchmark Name|Number of Services|
 |:-------------------------------|:------------------:|
-|[AceCard](../signatures/acecard.md)|2016|
-|[AdClickerBN](../signatures/adclickerbn.md)|2017|
-|[AdloadNL](../signatures/adloadnl.md)|2017|
-|[AdQR](../signatures/adqr.md)|2021|
+|[Social Network](../signatures/acecard.md)|12|
+|[Media Microsvc](../signatures/adclickerbn.md)|11|
+|[Hotel Reservation](../signatures/adloadnl.md)|8|
+|[Sockshop](../signatures/adqr.md)|7|
