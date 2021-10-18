@@ -13,7 +13,7 @@ Within this section, we provide the our benchmark applications that are modified
 
 |Benchmark Name|Number of Services|
 |:-------------------------------|:------------------:|
-|[Social Network](../signatures/acecard.md)|12|
-|[Media Microsvc](../signatures/adclickerbn.md)|11|
-|[Hotel Reservation](../signatures/adloadnl.md)|8|
-|[Sockshop](../signatures/adqr.md)|7|
+|[Social Network](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/social-network/code)|12|
+|[Media Microsvc](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/media-microsvc/code)|11|
+|[Hotel Reservation](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/hotel-reservation/code)|8|
+|[Sockshop](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/sock-shop/code)|7|
