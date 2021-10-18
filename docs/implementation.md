@@ -13,3 +13,10 @@ permalink: /docs/Implementation
 ## Docker container with all the dependencies is at [Docker Hub]()
 
 
+### Configuring the Application under test
+1. Arrange code in /apps folder
+2. update a config file in SSOT/config.json
+
+### Running the Kuber with Docker container
+1. Download the docker container from the DockerHub repo and the code from Github.
+2. Run the docker container with code 
