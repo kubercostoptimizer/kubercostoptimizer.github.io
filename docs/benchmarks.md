@@ -11,27 +11,37 @@ permalink: /docs/benchmarks
 
 In this section, we provide details about benchmark applications used in Kuber evaluvation.
 We added traces to each API in the application to calculate execution time of the API while excluding the Response time.
-Example of instrumented code:
-``` java
+Example of instrumented code for Get API in Catalogue service of SockShop:
+``` go
  
  // Original API definition
- public Cart get(@PathVariable String customerId) {
-        return new CartResource(cartDAO, customerId).value().get();
- }
+func (s *catalogueService) Get(id string) (Sock, error) {   
+        // other code
+        err := s.db.Get(&sock, query, id)
+        // other code
+        return sock, nil
+}
  
  // API definition with execution time calculations 
-  public Cart get(@PathVariable String customerId) {
-      long startTime = System.nanoTime();
-      final Span span = tracer.buildSpan("get_cart").start();
-      Cart obj = new CartResource(cartDAO, customerId).value().get();
-      long duration = System.nanoTime() - startTime;
-      HashMap hm = new HashMap();
-      hm.put("runtime_ms",duration/1000);
-      System.out.println("get call took "+duration);
-      span.log(hm);
-      span.finish();
-      return obj;
-  }
+func (s *catalogueService) Get(ctx context.Context,id string) (Sock, error) {
+      start := time.Now() // <- Start Timer for calculating Total Execution time
+      elapsed_external_call_time := time.Duration(0)
+      span := opentracing.StartSpan("Get")
+
+      // Other code
+      
+      external_call_2 := time.Now()
+      err := s.db.Get(&sock, query, id)  // <- External Call
+      elapsed_external_call_time = elapsed_external_call_time + time.Since(external_call_2)
+
+      // Other code
+      
+      elapsed := time.Since(start) // <- end Timer for calculating Total Execution time
+      elapsed = elapsed - elapsed_external_call_time
+      span.LogKV("runtime_ms",float64(elapsed)/float64(time.Millisecond)) // <- send performance data to Istio
+      span.Finish()
+      return sock, nil
+}
 
 ```
 In table below, we present original and modified versions of code for each benchmark.
