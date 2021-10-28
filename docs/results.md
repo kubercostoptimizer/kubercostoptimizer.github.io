@@ -11,13 +11,15 @@ permalink: /docs/results
     
 ## Overview
 
-Diagrams below examplify executions of each of the compared approaches for the SockShop application.
-Rectangle boxes denote service combinations and VM types sorted by price are represented by circles. 
-Circles coloured based on information about the execution. 
-1. Red coloured circle represents executed but not working VM types.
-2. Green coloured circle represents executed and working VM types.
-3. Orange coloured circles represent VM types that are determined to be not working because of condition 1.
-4. White circles are not executed VM types.
+Diagrams below exemplify executions of each of the compared approaches for the SockShop application. 
+Rectangular boxes at the top of each diagram represent service combinations. Circles represent VM types, which are sorted by their cost. 
+The color of each circle describe the execution state:
+
+1. Green circle:  executed experiments where VM type meets the performance target.
+2. Red circle: executed experiments where VM type does not meet the performance target. 
+3. Orange circles: VM types that are determined not to meat the performance target because of Condition 1.
+4. White circles:  are not executed VM types.
+
 
 ## SF :
 
