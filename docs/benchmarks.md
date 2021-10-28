@@ -9,8 +9,8 @@ permalink: /docs/benchmarks
 # Benchmarks Used in Evaluation
 ---
 
-In this section, we provide details about benchmark applications used in Kuber evaluvation.
-We added traces to each API in the application to calculate execution time of the API while excluding the Response times for external calls.
+In this section, we provide details about benchmark applications used in evaluvation of the Kuber.
+We added traces to each API in the application to calculate execution time of the API while excluding the response times for external calls from the API.
 
 In table below, we present original and modified versions of the code for each benchmark.
 
