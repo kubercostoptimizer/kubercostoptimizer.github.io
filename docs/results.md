@@ -34,7 +34,7 @@ Circles coloured based on information about the execution.
 
 ## Kuber :
 
-![Kuber](../sockshop.png)
+![Kuber](../Kuber.png)
 
 ## P :
 
