@@ -8,7 +8,7 @@ permalink: /docs/results
 
 # Results
 ---
-
+    
 ## Overview
 
 Diagrams below examplify executions of each of the compared approaches for the SockShop application.
@@ -21,18 +21,14 @@ Circles coloured based on information about the execution.
 ## Condition 1:
 ![SortFind](../sockshop.png)
 
-<style type="text/css">
-    ol { list-style-type: lower-alpha; }
-</style>
-
 Detailed results for each of the subject applications, which correspond to Figure 4 in the paper, can be found in the attached spreadsheets
-a. [Hotel Reservation Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Hotel_Reservation_search_cost.xlsx)
-b. [Media Microsvc Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Media_Microsvc_search_cost.xlsx)
-c. [Social Network Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Social_Network_search_cost.xlsx)
-d. [Sockshop Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/sockshop_search_cost.xlsx)
-e. [Hotel Reservation Execution Time](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Hotel_Reservation_exe_time.xlsx)
-f. [Media Microsvc Execution TIme](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Media_microsvc_exe_time.xlsx)
-g. [Social Network Execution Time](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Social_network_exe_time.xlsx)
-h. [Sockshop Execution Time](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/sockshop_exe_time.xlsx)
+1. [Hotel Reservation Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Hotel_Reservation_search_cost.xlsx)
+2. [Media Microsvc Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Media_Microsvc_search_cost.xlsx)
+3. [Social Network Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Social_Network_search_cost.xlsx)
+4. [Sockshop Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/sockshop_search_cost.xlsx)
+5. [Hotel Reservation Execution Time](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Hotel_Reservation_exe_time.xlsx)
+6. [Media Microsvc Execution TIme](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Media_microsvc_exe_time.xlsx)
+7. [Social Network Execution Time](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Social_network_exe_time.xlsx)
+8. [Sockshop Execution Time](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/sockshop_exe_time.xlsx)
 
 
