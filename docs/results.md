@@ -17,6 +17,7 @@ Circles coloured based on information about the execution.
 1. Red coloured circle represents executed but not working VM types.
 2. Green coloured circle represents executed and working VM types.
 3. Orange coloured circles represent VM types that are determined to be not working because of condition 1.
+4. White circles are not executed VM types.
 
 ## SF :
 
