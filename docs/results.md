@@ -22,7 +22,7 @@ Circles coloured based on information about the execution.
 ![SortFind](../sockshop.png)
 
 Detailed results for each of the subject applications, which correspond to Figure 4 in the paper, can be found in the attached spreadsheets 
-1. [Social Network](#blog-collection)
+1. [Social Network Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/blob/main/Social_Network_search_cost.xlsx)
 2. [Media Microsvc](#identifying-google-play-malware-blogs)
 3. [Hotel Reservation](#malware-collection-and-analysis)
 4. [Sockshop]()
