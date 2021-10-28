@@ -19,7 +19,7 @@ Circles coloured based on information about the execution.
 3. Orange coloured circles represent VM types that are determined to be not working because of condition 1.
 
 ## SF :
-![SF1](../sockshop.png)
+![SF1](../SF.png)
 
 ## SF<sub>1</sub> :
 ![SF1](../SF1.png)
