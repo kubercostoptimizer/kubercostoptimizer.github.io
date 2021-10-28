@@ -38,7 +38,7 @@ Circles coloured based on information about the execution.
 
 ## P :
 
-![P](../sockshop.png)
+![P](../P.png)
 
 Detailed results for each of the subject applications, which correspond to Figure 4 in the paper, can be found in the attached spreadsheets
 1. [Hotel Reservation Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Hotel_Reservation_search_cost.xlsx)
