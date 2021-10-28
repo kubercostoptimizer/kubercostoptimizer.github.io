@@ -30,7 +30,7 @@ Circles coloured based on information about the execution.
 
 ## SF<sub>3</sub> :
 
-![SF3](../sockshop.png)
+![SF3](../SF3.png)
 
 ## Kuber :
 
