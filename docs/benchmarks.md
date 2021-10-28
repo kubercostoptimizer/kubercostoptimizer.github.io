@@ -23,7 +23,7 @@ func (s *catalogueService) Get(id string) (Sock, error) {
 }
  
  // API definition with execution time calculations 
-func (s *catalogueService) Get(ctx context.Context,id string) (Sock, error) {
+func (s *catalogueService) Get(id string) (Sock, error) {
       start := time.Now() // <- Start Timer for API Total Execution time
       elapsed_external_call_time := time.Duration(0)
       span := opentracing.StartSpan("Get")
