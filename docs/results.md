@@ -23,23 +23,23 @@ Circles coloured based on information about the execution.
 [![](../SF.png)](../SF.png)
 
 ## SF<sub>1</sub> :
-![SF1](../SF1.png)
+[![](../SF1.png)](../SF1.png)
 
 ## SF<sub>2</sub> :
 
-![SF2](../SF2.png)
+[![](../SF2.png)](../SF2.png)
 
 ## SF<sub>3</sub> :
 
-![SF3](../SF3.png)
+[![](../SF3.png)](../SF3.png)
 
 ## P :
 
-![P](../P.png)
+[![](../P.png)](../P.png)
 
 ## Kuber :
 
-![Kuber](../Kuber.png)
+[![](../Kuber.png)](../Kuber.png)
 
 
 Detailed results for each of the subject applications, which correspond to Figure 4 in the paper, can be found in the attached spreadsheets
