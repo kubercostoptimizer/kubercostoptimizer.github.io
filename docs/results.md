@@ -22,7 +22,7 @@ Circles coloured based on information about the execution.
 ![SF1](../sockshop.png)
 
 ## SF<sub>1</sub> :
-![SF1](../sockshop.png)
+![SF1](../SF1.png)
 
 ## SF<sub>2</sub> :
 
