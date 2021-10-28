@@ -12,7 +12,7 @@ permalink: /docs/benchmarks
 In this section, we provide details about benchmark applications used in Kuber evaluvation.
 We added traces to each API in the application to calculate execution time of the API while excluding the Response times for external calls.
 
-In table below, we present original and modified versions of code for each benchmark.
+In table below, we present original and modified versions of the code for each benchmark.
 
 |Benchmark Name|Number of Services| Orginal Repo | Changed Repo|
 |:-------------------------------|:------------------:|
