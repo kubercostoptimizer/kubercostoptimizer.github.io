@@ -16,9 +16,9 @@ In table below, we present original and modified versions of the code for each b
 
 |Benchmark Name|Number of Services| Orginal Repo | Changed Repo|
 |:-------------------------------|:------------------:|
-|Social Network|12|[link](https://github.com/delimitrou/DeathStarBench/tree/master/hotelReservation)|[link](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/social-network/code)
-|Media Microsvc|11|[link](https://github.com/delimitrou/DeathStarBench/tree/master/mediaMicroservices)|[link](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/media-microsvc/code)
 |Hotel Reservation|8|[link](https://github.com/delimitrou/DeathStarBench/tree/master/hotelReservation)|[link](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/hotel-reservation/code)
+|Media Microsvc|11|[link](https://github.com/delimitrou/DeathStarBench/tree/master/mediaMicroservices)|[link](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/media-microsvc/code)
+|Social Network|12|[link](https://github.com/delimitrou/DeathStarBench/tree/master/hotelReservation)|[link](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/social-network/code)
 |Sockshop|7|[link](https://github.com/microservices-demo)|[link](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/sock-shop/code)
 
 
