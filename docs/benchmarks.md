@@ -24,21 +24,21 @@ func (s *catalogueService) Get(id string) (Sock, error) {
  
  // API definition with execution time calculations 
 func (s *catalogueService) Get(ctx context.Context,id string) (Sock, error) {
-      start := time.Now() // <- Start Timer for calculating Total Execution time
+      start := time.Now() // <- Start Timer for API Total Execution time
       elapsed_external_call_time := time.Duration(0)
       span := opentracing.StartSpan("Get")
 
       // Other code
-      
+ 
       external_call_2 := time.Now()
       err := s.db.Get(&sock, query, id)  // <- External Call
       elapsed_external_call_time = elapsed_external_call_time + time.Since(external_call_2)
 
       // Other code
       
-      elapsed := time.Since(start) // <- end Timer for calculating Total Execution time
+      elapsed := time.Since(start) // <- end Timer for API Total Execution time
       elapsed = elapsed - elapsed_external_call_time
-      span.LogKV("runtime_ms",float64(elapsed)/float64(time.Millisecond)) // <- send performance data to Istio
+      span.LogKV("runtime_ms",float64(elapsed)/float64(time.Millisecond)) // <- send data to Istio
       span.Finish()
       return sock, nil
 }
