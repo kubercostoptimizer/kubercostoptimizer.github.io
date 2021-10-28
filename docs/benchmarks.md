@@ -9,10 +9,8 @@ permalink: /docs/benchmarks
 # Benchmarks Used in Evaluation
 ---
 
-In this section, we provide details about benchmark applications used in evaluvation of the Kuber.
-We added traces to each API in the application to calculate execution time of the API while excluding the response times for external calls from the API.
-
-In table below, we present original and modified versions of the code for each benchmark.
+The table below contains the original and the instrumented versions of each benchmark application used in the evaluation of Kuber. 
+In our instrumentation, we added traces to each API to calculate the execution time of the API while subtracting the execution times of the APIs it triggers. 
 
 |Benchmark Name|Number of Services| Orginal Repo | Changed Repo|
 |:-------------------------------|:------------------:|
@@ -22,8 +20,8 @@ In table below, we present original and modified versions of the code for each b
 |Sockshop|7|[link](https://github.com/microservices-demo)|[link](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps/sock-shop/code)
 
 
-Example of instrumented code for Get API in Catalogue service of SockShop:
-In below code, we removed response time of a database call from Get API execution time.
+An example of the instrumented GET API of the Catalogue service in the SockShop application is below. 
+Here, we subtract the response time of the database call from the API execution time.
 ``` go
  
  // Original API definition
