@@ -13,6 +13,8 @@ permalink: /docs/results
 
 The detailed information about benchmarks and experiment results are provided in the below.
 
+![Sockshop](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/blob/main/sockshop.png)
+
 1. [Social Network](#blog-collection)
 2. [Media Microsvc](#identifying-google-play-malware-blogs)
 3. [Hotel Reservation](#malware-collection-and-analysis)
