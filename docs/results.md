@@ -21,6 +21,10 @@ Circles coloured based on information about the execution.
 ## Condition 1:
 ![SortFind](../sockshop.png)
 
+<style type="text/css">
+    ol { list-style-type: lower-alpha; }
+</style>
+
 Detailed results for each of the subject applications, which correspond to Figure 4 in the paper, can be found in the attached spreadsheets
 a. [Hotel Reservation Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Hotel_Reservation_search_cost.xlsx)
 b. [Media Microsvc Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Media_Microsvc_search_cost.xlsx)
