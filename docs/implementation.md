@@ -131,7 +131,7 @@ export DOCKERPASS= xxxx #DockerHub password
 export DOCKERMAIL= xxxx #DockerHub mail
 ```
 
-4. Then execute the Kuber inside the container:
+Finally, execute the Kuber inside the container:
 
 ```sh
 cd /wd/code/kuber
