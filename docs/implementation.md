@@ -112,7 +112,7 @@ Below we explain in detail each of the config options:
    
 ---
 ### Running the Kuber with Docker container
-1. Download the docker container from the DockerHub repo and the code from Github.
+1. Download the docker container from the [Docker Hub](https://hub.docker.com/r/kuberload/kuber) and the code from [GitHub](https://github.com/kubercostoptimizer/Kuber/tree/master/code).
 2. Run the docker container with code using the following command:
 ```sh
 docker run -it -v /code:/wd/code kuberload/kuber:latest /bin/bash
