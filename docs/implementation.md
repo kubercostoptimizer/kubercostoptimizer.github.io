@@ -49,10 +49,9 @@ Kuber needs the following information from the application developer:
    - Create a folder apps/app_name/load_test/init_scripts/
    - place the required code and invoke it with script run.sh
 
-The remaining configuration is done on SSOT/config.json file.
-
 #### SSOT: Single Source Of Truth
 
+Application developers have to configure VM types and services that need to be tested in file SSOT/config.json.
 Example config.json file in SSOT folder:
 
 ``` json
@@ -110,6 +109,7 @@ Below we explain in detail each of the config options:
    - ram: RAM size in GB
    - computer: physical machine to place the VM type in.
    - price: cost per hour in $.
+   
 ---
 ### Running the Kuber with Docker container
 1. Download the docker container from the DockerHub repo and the code from Github.
