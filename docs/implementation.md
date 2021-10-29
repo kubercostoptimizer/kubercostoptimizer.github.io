@@ -95,13 +95,13 @@ Example config.json file in SSOT folder:
 ```
 Below we explain in detail each of the config options:
 1. Application
-   - name: Name of the application, should be the same as the namespace given in deployment files, and folder name in /apps.
+   - name: Name of the application, should be same as the namespace given in Kubernetes deployment files, and folder name in /apps.
    - services: names of each microservice, should be the same as Kubernetes services in /apps/app_name/deploy.
    - front-end: service that receives external traffic into the application.
    - port: port exposed by front-end.
 2. Profiling 
    - time_limit: the amount of time to run a load test.
-   - concurrent: number of concurrent users.
+   - concurrent: number of concurrent users that run the test.
 3. VM types
    - Each entry in this list corresponds to a VM type
    - name: user-given name for the VM type
