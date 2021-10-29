@@ -7,7 +7,7 @@ permalink: /docs/Implementation
 ---
 
 ## The source code of our framework is available on [GitHub](https://github.com/kubercostoptimizer/Kuber/tree/master/code).
-## Docker container with all the dependencies is at [Docker Hub]()
+## Docker container with all the dependencies is at [Docker Hub](https://hub.docker.com/r/kuberload/kuber)
 ---
 
 ## Prerequisites for Running
@@ -113,4 +113,12 @@ Below we explain in detail each of the config options:
 ---
 ### Running the Kuber with Docker container
 1. Download the docker container from the DockerHub repo and the code from Github.
-2. Run the docker container with code 
+2. Run the docker container with code using the following command:
+```sh
+docker run -it -v /code:/wd/code kuberload/kuber:latest /bin/bash
+```
+3. Then execute the Kuber inside the container:
+```sh
+cd /wd/code/kuber
+python run.py
+```
