@@ -17,20 +17,20 @@ permalink: /docs/Implementation
 ---
 ## Code Structure
 The code found in [Github](https://github.com/kubercostoptimizer/Kuber/tree/master/code) is arranged into the following folders:
-1. Infrastructure: Handles low-level functions
+1. [Infrastructure](https://github.com/kubercostoptimizer/Kuber/tree/master/code/Infrastructure): Handles low-level functions
     - Creates VMs, Kubernetes Cluster, and deploys Istio.
     - Deploys combinations onto VM types.
     - Uses OpenNebula and Kubernetes APIs to work.
-2. Profiler: Executes a combination on a VM type
+2. [Profiler](https://github.com/kubercostoptimizer/Kuber/tree/master/code/Profiler): Executes a combination on a VM type
     - Creates initial cluster needed for all services in the app.
     - Uses Infrastructure to place the combination on the test VM.
     - Loads the databases for the app.
     - Load tests the app and extracts performance data from Istio logs. 
-3. Kuber:
+3. [Kuber](https://github.com/kubercostoptimizer/Kuber/tree/master/code/kuber):
     - Code for Combination selector and Deployment Planner.
-4. SSOT: Configuration 
+4. [SSOT](https://github.com/kubercostoptimizer/Kuber/tree/master/code/SSOT): Configuration 
     - Information about VM types and services.
-5. Apps
+5. [Apps](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps): Application files
     - Application deployment files and load tests.
 
 ---
