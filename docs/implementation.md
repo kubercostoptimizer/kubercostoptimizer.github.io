@@ -19,7 +19,7 @@ permalink: /docs/Implementation
 The code found in [Github](https://github.com/kubercostoptimizer/Kuber/tree/master/code) is arranged into the following folders:
 1. Infrastructure: Handles low-level functions
     - Creates VMs, Kubernetes Cluster, and deploys Istio.
-    - Deploy combinations onto VM types.
+    - Deploys combinations onto VM types.
     - Uses OpenNebula and Kubernetes APIs to work.
 2. Profiler: Executes a combination on a VM type
     - Creates initial cluster needed for all services in the app.
@@ -43,10 +43,10 @@ Kuber needs the following information from the application developer:
 1. We need Kubernetes deployment files (.yamls) for deploying services and their dependencies.
    - place all the deployment files in /apps/app_name/deploy folder.
 2. Load test that needs to be executed to test a combination
-   - Copy existing load_test folder from /apps/sock-shop/load_test
+   - copy existing load_test folder from /apps/sock-shop/load_test
    - update /apps/app_name/load_test/locustfile.py with required test scenario.
 3. Initial configuration such as loading databases
-   - Create a folder apps/app_name/load_test/init_scripts/
+   - create a folder apps/app_name/load_test/init_scripts/
    - place the required code and invoke it with script run.sh
 
 #### SSOT: Single Source Of Truth
@@ -107,7 +107,7 @@ Below we explain in detail each of the config options:
    - name: user-given name for the VM type
    - cpu_count: number of CPU cores
    - ram: RAM size in GB
-   - computer: physical machine to place the VM type in.
+   - computer: physical machine to place the VM type in. Hostname in OpenNebula cluster. 
    - price: cost per hour in $.
    
 ---
