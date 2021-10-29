@@ -43,7 +43,7 @@ Kuber needs the following information from the application developer:
 1. We need Kubernetes deployment files (.yamls) for deploying services and their dependencies.
    - place all the deployment files in /apps/app_name/deploy folder.
 2. Load test that needs to be executed to test a combination
-   - Copy existing load_test folder from other apps in /apps/sock-shop/load_test
+   - Copy existing load_test folder from /apps/sock-shop/load_test
    - update /apps/app_name/load_test/locustfile.py with required test scenario.
 3. Initial configuration such as loading databases
    - Create a folder apps/app_name/load_test/init_scripts/
