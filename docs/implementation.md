@@ -34,11 +34,11 @@ The code found in [Github](https://github.com/kubercostoptimizer/Kuber/tree/mast
     - Application deployment files and load tests.
 
 ---
-### Configuration
+## Configuration
 
 Kuber needs the following information from the application developer:
 
-#### Data about the application
+### Data about the application
 
 1. We need Kubernetes deployment files (.yamls) for deploying services and their dependencies.
    - place all the deployment files in /apps/app_name/deploy folder.
@@ -49,7 +49,7 @@ Kuber needs the following information from the application developer:
    - create a folder apps/app_name/load_test/init_scripts/
    - place the required code and invoke it with script run.sh
 
-#### SSOT: Single Source Of Truth
+### SSOT: Single Source Of Truth
 
 Application developers have to configure VM types and services that need to be tested in file SSOT/config.json.
 Example config.json file in SSOT folder:
@@ -111,7 +111,7 @@ Below we explain in detail each of the config options:
    - price: cost per hour in $.
    
 ---
-### Running the Kuber with Docker container
+## Running the Kuber with Docker container
 1. Download the docker container from the [Docker Hub](https://hub.docker.com/r/kuberload/kuber) and the code from [GitHub](https://github.com/kubercostoptimizer/Kuber/tree/master/code).
 2. Run the docker container with code using the following command:
 ```sh
