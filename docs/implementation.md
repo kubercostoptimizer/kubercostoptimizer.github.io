@@ -118,6 +118,7 @@ Below we explain in detail each of the config options:
 docker run -it -v /code:/wd/code kuberload/kuber:latest /bin/bash
 ```
 3. Update login credentials for OpenNebula Cluster and DockerHub
+
 ```sh
 # OpenNebula Cluster Credentials
 export USERNAME= xxxx # OpenNebula username
@@ -129,7 +130,9 @@ export DOCKERID= xxxx # DockerHub username
 export DOCKERPASS= xxxx # DockerHub password
 export DOCKERMAIL= xxxx # # DockerHub mail
 ```
+
 4. Then execute the Kuber inside the container:
+
 ```sh
 cd /wd/code/kuber
 python run.py
