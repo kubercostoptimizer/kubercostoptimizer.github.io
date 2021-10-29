@@ -120,15 +120,15 @@ docker run -it -v /code:/wd/code kuberload/kuber:latest /bin/bash
 3. Update login credentials for OpenNebula Cluster and DockerHub
 
 ```sh
-# OpenNebula Cluster Credentials
-export USERNAME= xxxx # OpenNebula username
-export PASSWORD= xxxxx # OpenNebula password
-export USERID= xxxx # OpenNebula userid
+#OpenNebula Cluster Credentials
+export USERNAME= xxxx #OpenNebula username
+export PASSWORD= xxxxx #OpenNebula password
+export USERID= xxxx #OpenNebula userid
 
-# DockerHub Credentials
-export DOCKERID= xxxx # DockerHub username
-export DOCKERPASS= xxxx # DockerHub password
-export DOCKERMAIL= xxxx # # DockerHub mail
+#DockerHub Credentials
+export DOCKERID= xxxx #DockerHub username
+export DOCKERPASS= xxxx #DockerHub password
+export DOCKERMAIL= xxxx #DockerHub mail
 ```
 
 4. Then execute the Kuber inside the container:
