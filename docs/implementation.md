@@ -16,43 +16,45 @@ permalink: /docs/Implementation
 
 ---
 ## Code Structure
-The code found in [Github](https://github.com/kubercostoptimizer/Kuber/tree/master/code) is arranged into the following folders:
-1. [Infrastructure](https://github.com/kubercostoptimizer/Kuber/tree/master/code/Infrastructure): Handles low-level functions
-    - Creates VMs, Kubernetes Cluster, and deploys Istio.
-    - Deploys combinations onto VM types.
-    - Uses OpenNebula and Kubernetes APIs to work.
+The code is found in [Github](https://github.com/kubercostoptimizer/Kuber/tree/master/code) and is arranged in the following packages:
+1. [Infrastructure](https://github.com/kubercostoptimizer/Kuber/tree/master/code/Infrastructure): handles low-level functions
+    - Uses OpenNebula API to creates VMs of required type. 
+    - Deploys Kubernetes on to VMs or adds new VM. 
+    - Deploys combinations using Kubernetes API.
 2. [Profiler](https://github.com/kubercostoptimizer/Kuber/tree/master/code/Profiler): Executes a combination on a VM type
     - Creates initial cluster needed for all services in the app.
-    - Uses Infrastructure to place the combination on the test VM.
+    - Uses the Infrastructure package to place the service combination on the test VM.
     - Loads the databases for the app.
-    - Load tests the app and extracts performance data from Istio logs. 
-3. [Kuber](https://github.com/kubercostoptimizer/Kuber/tree/master/code/kuber):
-    - Code for Combination selector and Deployment Planner.
-4. [SSOT](https://github.com/kubercostoptimizer/Kuber/tree/master/code/SSOT): Configuration 
-    - Information about VM types and services.
-5. [Apps](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps): Application files
-    - Application deployment files and load tests.
+    - Loads tests of the app and extracts performance data from the Istio logs. 
+3. [Kuber](https://github.com/kubercostoptimizer/Kuber/tree/master/code/kuber): code of the Combination Selector and Deployment Planner components.
+4. [SSOT](https://github.com/kubercostoptimizer/Kuber/tree/master/code/SSOT): Configuration information about VM types and services.
+5. [Apps](https://github.com/kubercostoptimizer/Kuber/tree/master/code/apps): Application deployment files and load tests.
 
 ---
 ## Configuration
 
-Kuber needs the following information from the application developer:
+Kuber needs the following information to be provided by the application developer:
 
 ### Data about the application
 
-1. We need Kubernetes deployment files (.yamls) for deploying services and their dependencies.
+1. Kubernetes deployment files (.yamls) for deploying services and their dependencies.
    - place all the deployment files in /apps/app_name/deploy folder.
-2. Load test that needs to be executed to test a combination
+2. Load test to execute.
    - copy existing load_test folder from /apps/sock-shop/load_test
    - update /apps/app_name/load_test/locustfile.py with required test scenario.
-3. Initial configuration such as loading databases
+3. Initial load, e.g., for databases
    - create a folder apps/app_name/load_test/init_scripts/
-   - place the required code and invoke it with script run.sh
+   - Copy the code the initializes the application.
+   - Create a file run.sh and modify the file to invoke the code from it.
+   - Example: if initialization script is a python code init.py, add a line to run.sh:
+   ```python
+       python init.py
+   ```
 
 ### SSOT: Single Source Of Truth
 
-Application developers have to configure VM types and services that need to be tested in file SSOT/config.json.
-Example config.json file in SSOT folder:
+Application developers have to configure VM types and services that need to be tested in file SSOT/config.json. 
+Example config.json file is in the SSOT folder. Below we explain in detail each of the config options:
 
 ``` json
 {
@@ -93,22 +95,21 @@ Example config.json file in SSOT folder:
       }
 }
 ```
-Below we explain in detail each of the config options:
-1. Application
-   - name: Name of the application, should be same as the namespace given in Kubernetes deployment files, and folder name in /apps.
-   - services: names of each microservice, should be the same as Kubernetes services in /apps/app_name/deploy.
-   - front-end: service that receives external traffic into the application.
-   - port: port exposed by front-end.
-2. Profiling 
-   - time_limit: the amount of time to run a load test.
-   - concurrent: number of concurrent users that run the test.
-3. VM types
-   - Each entry in this list corresponds to a VM type
-   - name: user-given name for the VM type
-   - cpu_count: number of CPU cores
-   - ram: RAM size in GB
-   - computer: physical machine to place the VM type in. Hostname in OpenNebula cluster. 
-   - price: cost per hour in $.
+1.	Application
+    - name: the name of the application (should be same as the namespace given in Kubernetes deployment files and the folder name in /apps).
+    - services: names of each microservice, should be the same as in the Kubernetes services in /apps/app_name/deploy.
+    - front-end: service that receives external traffic for the application.
+    - port: port exposed by front-end.
+2.	Profiling
+    - time_limit: the amount of time to run each load test.
+    - concurrent: number of concurrent users for the test.
+3.	VM types: a list where each entry corresponds to a VM type and contains
+    - name: user-given name for the VM type
+    - cpu_count: number of CPU cores
+    - ram: RAM size in GB
+    - price: cost per hour in $
+    - computer: a physical machine to place the VM on, i.e., a hostname in OpenNebula cluster.
+
    
 ---
 ## Running the Kuber with Docker container
@@ -131,7 +132,7 @@ export DOCKERPASS= xxxx #DockerHub password
 export DOCKERMAIL= xxxx #DockerHub mail
 ```
 
-Finally, execute the Kuber inside the container:
+4. Finally, execute the Kuber inside the container:
 
 ```sh
 cd /wd/code/kuber
