@@ -54,7 +54,8 @@ Kuber needs the following information to be provided by the application develope
 ### SSOT: Single Source Of Truth
 
 Application developers have to configure VM types and services that need to be tested in file SSOT/config.json. 
-Example config.json file is in the SSOT folder. Below we explain in detail each of the config options:
+Example config.json file is in the SSOT folder. 
+Below we explain in detail each of the config options:
 
 ``` json
 {
