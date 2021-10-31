@@ -11,8 +11,8 @@ permalink: /docs/Implementation
 ---
 
 ## Prerequisites for Running
-1. Working OpenNebula Cluster: For creating VMs. 
-2. DockerHub Account: Stores app's Docker images for Kubernetes to deploy.
+1. A working OpenNebula Cluster: for creating VMs. Installation instructions are available [here](https://docs.opennebula.io/5.12/deployment/index.html).  
+2. A [DockerHub](https://hub.docker.com/) account: stores apps’ Docker images for Kubernetes to deploy.
 
 ---
 ## Code Structure
