@@ -115,26 +115,26 @@ Example config.json file is in the SSOT folder. Below we explain in detail each 
 ## Running the Kuber with Docker container
 1. Download the docker container from the [DockerHub](https://hub.docker.com/r/kuberload/kuber) and the code from [GitHub](https://github.com/kubercostoptimizer/Kuber/tree/master/code).
 2. Run the docker container with code using the following command:
-```sh
-docker run -it -v /code:/wd/code kuberload/kuber:latest /bin/bash
-```
+    ```sh
+    docker run -it -v /code:/wd/code kuberload/kuber:latest /bin/bash
+    ```
 3. Update login credentials for OpenNebula Cluster and DockerHub
 
-```sh
-#OpenNebula Cluster Credentials
-export USERNAME= xxxx #OpenNebula username
-export PASSWORD= xxxxx #OpenNebula password
-export USERID= xxxx #OpenNebula userid
+    ```sh
+    #OpenNebula Cluster Credentials
+    export USERNAME= xxxx #OpenNebula username
+    export PASSWORD= xxxxx #OpenNebula password
+    export USERID= xxxx #OpenNebula userid
 
-#DockerHub Credentials
-export DOCKERID= xxxx #DockerHub username
-export DOCKERPASS= xxxx #DockerHub password
-export DOCKERMAIL= xxxx #DockerHub mail
-```
+    #DockerHub Credentials
+    export DOCKERID= xxxx #DockerHub username
+    export DOCKERPASS= xxxx #DockerHub password
+    export DOCKERMAIL= xxxx #DockerHub mail
+    ```
 
 4. Finally, execute the Kuber inside the container:
 
-```sh
-cd /wd/code/kuber
-python run.py
-```
+    ```sh
+    cd /wd/code/kuber
+    python run.py
+    ```
