@@ -114,14 +114,14 @@ Below we explain in detail each of the config options:
    
 ---
 ## Running the Kuber with Docker container
-1. Download the docker container from the [DockerHub](https://hub.docker.com/r/kuberload/kuber) and the code from [GitHub](https://github.com/kubercostoptimizer/Kuber/tree/master/code).
-2. Run the docker container with code using the following command:
+ - Download the docker container from the [DockerHub](https://hub.docker.com/r/kuberload/kuber) and the code from [GitHub ](https://github.com/kubercostoptimizer/Kuber/tree/master/code).
+ - Run the docker container with code using the following command:
         
         ```sh
         docker run -it -v /code:/wd/code kuberload/kuber:latest /bin/bash
         ```
         
-3. Update login credentials for OpenNebula Cluster and DockerHub
+ - Update login credentials for OpenNebula Cluster and DockerHub
         
         ```sh
         #OpenNebula Cluster Credentials
@@ -135,7 +135,7 @@ Below we explain in detail each of the config options:
         export DOCKERMAIL= xxxx #DockerHub mail
         ```
         
-4. Finally, execute the Kuber inside the container:
+ - Finally, execute the Kuber inside the container:
         
         ```sh
         cd /wd/code/kuber
