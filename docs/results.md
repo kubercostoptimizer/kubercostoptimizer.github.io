@@ -57,20 +57,160 @@ Detailed results for each of the subject applications, which correspond to Figur
 
 ---
 
-Table 5.1 shows time spent by each of the approaches, separately in each of
+Table below shows time spent by each of the approaches, separately in each of
 the phases (setting up VMs for the experiments, executing the experiments, and
 running the WIP algorithm) and in total. While KUBER take 53 hours on average
 (the last column), the other three approaches execute for hundreds hours on an
 average. In fact, the total execution time of all the experiments is more than four months.
 
-| App               | SortFind |        |     |       | SortFind + Condition 1 |        |     |       | SortFind + Condition 2 |        |     |       | SortFind + Condition 3 |        |     |       | Kuber |        |     |       |
-|-------------------|:--------:|--------|-----|-------|:----------------------:|--------|-----|-------|:----------------------:|--------|-----|-------|:----------------------:|--------|-----|-------|:-----:|--------|-----|-------|
-|                   | Setup    | Exper. | WID | Total | Setup                  | Exper. | WID | Total | Setup                  | Exper. | WID | Total | Setup                  | Exper. | WID | Total | Setup | Exper. | WID | Total |
-| Hotel Reservation | >395     | >158   | 0   | >553  | 55                     | 22     | 0   | 77    | 150                    | 60     | 16  | 226   | 55                     | 22     | 2   | 79    | 15    | 6      | 7   | 28    |
-| Media Service     | >372     | >149   | 0   | >521  | 150                    | 60     | 0   | 210   | 412                    | 165    | 36  | 613   | 90                     | 36     | 2   | 128   | 30    | 12     | 15  | 57    |
-| Social Network    | >362     | >145   | 0   | >507  | 245                    | 98     | 0   | 343   | 322                    | 129    | 26  | 477   | 357                    | 143    | 5   | 505   | 58    | 23     | 22  | 103   |
-| Sock Shop         | >265     | >106   | 0   | >371  | 20                     | 8      | 0   | 28    | 130                    | 52     | 7   | 189   | 60                     | 24     | 1   | 85    | 10    | 4      | 12  | 26    |
-| Average           | >348     | >139   | 0   | >487  | 117                    | 47     | 0   | 164   | 253                    | 101    | 21  | 375   | 140                    | 56     | 2.5 | 198   | 28    | 11     | 14  | 53    |
-
-
-
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow" rowspan="2">App</th>
+    <th class="tg-c3ow" colspan="4">SortFind</th>
+    <th class="tg-c3ow" colspan="4">SortFind + Condition 1</th>
+    <th class="tg-c3ow" colspan="4">SortFind + Condition 2</th>
+    <th class="tg-c3ow" colspan="4">SortFind + Condition 3</th>
+    <th class="tg-c3ow" colspan="4">Kuber</th>
+  </tr>
+  <tr>
+    <th class="tg-c3ow">Setup</th>
+    <th class="tg-c3ow">Exper.</th>
+    <th class="tg-c3ow">WID</th>
+    <th class="tg-c3ow">Total</th>
+    <th class="tg-c3ow">Setup</th>
+    <th class="tg-c3ow">Exper.</th>
+    <th class="tg-c3ow">WID</th>
+    <th class="tg-c3ow">Total</th>
+    <th class="tg-c3ow">Setup</th>
+    <th class="tg-c3ow">Exper.</th>
+    <th class="tg-c3ow">WID</th>
+    <th class="tg-c3ow">Total</th>
+    <th class="tg-c3ow">Setup</th>
+    <th class="tg-c3ow">Exper.</th>
+    <th class="tg-c3ow">WID</th>
+    <th class="tg-c3ow">Total</th>
+    <th class="tg-c3ow">Setup</th>
+    <th class="tg-c3ow">Exper.</th>
+    <th class="tg-c3ow">WID</th>
+    <th class="tg-c3ow">Total</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Hotel Reservation</td>
+    <td class="tg-c3ow">&gt;395</td>
+    <td class="tg-c3ow">&gt;158</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">&gt;553</td>
+    <td class="tg-c3ow">55</td>
+    <td class="tg-c3ow">22</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">77</td>
+    <td class="tg-c3ow">150</td>
+    <td class="tg-c3ow">60</td>
+    <td class="tg-c3ow">16</td>
+    <td class="tg-c3ow">226</td>
+    <td class="tg-c3ow">55</td>
+    <td class="tg-c3ow">22</td>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-c3ow">79</td>
+    <td class="tg-c3ow">15</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">7</td>
+    <td class="tg-c3ow">28</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Media Service</td>
+    <td class="tg-c3ow">&gt;372</td>
+    <td class="tg-c3ow">&gt;149</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">&gt;521</td>
+    <td class="tg-c3ow">150</td>
+    <td class="tg-c3ow">60</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">210</td>
+    <td class="tg-c3ow">412</td>
+    <td class="tg-c3ow">165</td>
+    <td class="tg-c3ow">36</td>
+    <td class="tg-c3ow">613</td>
+    <td class="tg-c3ow">90</td>
+    <td class="tg-c3ow">36</td>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-c3ow">128</td>
+    <td class="tg-c3ow">30</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">15</td>
+    <td class="tg-c3ow">57</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Social Network</td>
+    <td class="tg-c3ow">&gt;362</td>
+    <td class="tg-c3ow">&gt;145</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">&gt;507</td>
+    <td class="tg-c3ow">245</td>
+    <td class="tg-c3ow">98</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">343</td>
+    <td class="tg-c3ow">322</td>
+    <td class="tg-c3ow">129</td>
+    <td class="tg-c3ow">26</td>
+    <td class="tg-c3ow">477</td>
+    <td class="tg-c3ow">357</td>
+    <td class="tg-c3ow">143</td>
+    <td class="tg-c3ow">5</td>
+    <td class="tg-c3ow">505</td>
+    <td class="tg-c3ow">58</td>
+    <td class="tg-c3ow">23</td>
+    <td class="tg-c3ow">22</td>
+    <td class="tg-c3ow">103</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Sock Shop</td>
+    <td class="tg-c3ow">&gt;265</td>
+    <td class="tg-c3ow">&gt;106</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">&gt;371</td>
+    <td class="tg-c3ow">20</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">28</td>
+    <td class="tg-c3ow">130</td>
+    <td class="tg-c3ow">52</td>
+    <td class="tg-c3ow">7</td>
+    <td class="tg-c3ow">189</td>
+    <td class="tg-c3ow">60</td>
+    <td class="tg-c3ow">24</td>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">85</td>
+    <td class="tg-c3ow">10</td>
+    <td class="tg-c3ow">4</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">26</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Average</td>
+    <td class="tg-c3ow">&gt;348</td>
+    <td class="tg-c3ow">&gt;139</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">&gt;487</td>
+    <td class="tg-c3ow">117</td>
+    <td class="tg-c3ow">47</td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">164</td>
+    <td class="tg-c3ow">253</td>
+    <td class="tg-c3ow">101</td>
+    <td class="tg-c3ow">21</td>
+    <td class="tg-c3ow">375</td>
+    <td class="tg-c3ow">140</td>
+    <td class="tg-c3ow">56</td>
+    <td class="tg-c3ow">2.5</td>
+    <td class="tg-c3ow">198</td>
+    <td class="tg-c3ow">28</td>
+    <td class="tg-c3ow">11</td>
+    <td class="tg-c3ow">14</td>
+    <td class="tg-c3ow">53</td>
+  </tr>
+</tbody>
+</table>
