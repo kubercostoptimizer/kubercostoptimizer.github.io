@@ -56,12 +56,9 @@ Detailed results for each of the subject applications, which correspond to Figur
 8. [Sockshop Execution Time](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/sockshop_exe_time.xlsx)
 
 ---
+## Execution Time Breakdown for Kuber
 
-Table below shows time spent by each of the approaches, separately in each of
-the phases (setting up VMs for the experiments, executing the experiments, and
-running the WIP algorithm) and in total. While KUBER take 53 hours on average
-(the last column), the other three approaches execute for hundreds hours on an
-average. In fact, the total execution time of all the experiments is more than four months.
+Table below shows time spent by each of the approaches, separately in each of the phases (setting up VMs for the experiments, executing the experiments, and running the WIP algorithm) and in total. While KUBER take 53 hours on average (the last column), the other three approaches execute for hundreds hours on an average. In fact, the total execution time of all the experiments is more than four months.
 
 <table class="tg">
 <thead>
@@ -211,6 +208,59 @@ average. In fact, the total execution time of all the experiments is more than f
     <td class="tg-c3ow">11</td>
     <td class="tg-c3ow">14</td>
     <td class="tg-c3ow">53</td>
+  </tr>
+</tbody>
+</table>
+
+---
+## Utilization of VMs by Application Test
+
+To make sure our VM selection and configuration are appropriate for the selected subject applications and their workload, we run each service on each VM type in isolation. 
+Table below shows the average CPU and memory utilization on the smallest and largest VM types, VM1 and VM11, respectively. 
+As none of our VMs are overloaded by a single service, we believe our experiments are well-constructed.
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-9wq8" rowspan="2">Benchmark</th>
+    <th class="tg-c3ow" colspan="2">CPU Utilization (%)</th>
+    <th class="tg-c3ow" colspan="2">Memory Utilization (%)</th>
+  </tr>
+  <tr>
+    <th class="tg-c3ow">VM1</th>
+    <th class="tg-c3ow">VM11</th>
+    <th class="tg-c3ow">VM1</th>
+    <th class="tg-c3ow">VM11</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Social Network</td>
+    <td class="tg-c3ow">37.7</td>
+    <td class="tg-c3ow">3.1</td>
+    <td class="tg-c3ow">30</td>
+    <td class="tg-c3ow">2</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Media Service</td>
+    <td class="tg-c3ow">26.27</td>
+    <td class="tg-c3ow">2.91</td>
+    <td class="tg-c3ow">29.73</td>
+    <td class="tg-c3ow">1.89</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Hotel Reservation</td>
+    <td class="tg-c3ow">27.13</td>
+    <td class="tg-c3ow">3.13</td>
+    <td class="tg-c3ow">28.5</td>
+    <td class="tg-c3ow">1.8</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Sock Shop</td>
+    <td class="tg-c3ow">33.86</td>
+    <td class="tg-c3ow">4.57</td>
+    <td class="tg-c3ow">30.71</td>
+    <td class="tg-c3ow">1.93</td>
   </tr>
 </tbody>
 </table>
