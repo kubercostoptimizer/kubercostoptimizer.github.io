@@ -15,10 +15,10 @@ Diagrams below exemplify executions of each of the compared approaches for the S
 Rectangular boxes at the top of each diagram represent service combinations. Circles represent VM types, which are sorted by their cost. 
 The color of each circle describe the execution state:
 
-1. Green circle:  executed experiments where VM type meets the performance target.
-2. Red circle: executed experiments where VM type does not meet the performance target. 
-3. Orange circles: VM types that are determined not to meat the performance target because of Condition 1.
-4. White circles:  are not executed VM types.
+1.	Green circle: executed experiments where VM type meets the performance target.
+2.	Red circle: executed experiments where VM type does not meet the performance target.
+3.	Orange circles: VM types that are determined not to meat the performance target because of Condition 1.
+4.	White circles: are not executed VM types.
 
 
 ## SF :
@@ -45,7 +45,7 @@ The color of each circle describe the execution state:
 [![](../Kuber.png)](../Kuber.png)
 
 
-Detailed results for each of the subject applications, which correspond to Figure 4 in the paper, can be found in the attached spreadsheets
+Detailed results for each of the subject applications, which correspond to Figure 4 in the paper, can be found in the attached spreadsheets.
 1. [Hotel Reservation Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Hotel_Reservation_search_cost.xlsx)
 2. [Media Microsvc Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Media_Microsvc_search_cost.xlsx)
 3. [Social Network Search Cost](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/raw/main/Social_Network_search_cost.xlsx)
@@ -58,7 +58,8 @@ Detailed results for each of the subject applications, which correspond to Figur
 ---
 ## Execution Time Breakdown for Kuber
 
-Table below shows time spent by each of the approaches, separately in each of the phases (setting up VMs for the experiments, executing the experiments, and running the WIP algorithm) and in total. While KUBER take 53 hours on average (the last column), the other three approaches execute for hundreds hours on an average. In fact, the total execution time of all the experiments is more than four months.
+The table below shows time spent by each of the approaches in each of the phases (setting up VMs for the experiments, executing the experiments, and running the WIP algorithm). While KUBER take 53 hours on average (the last column), the other three approaches execute for hundreds of hours on average. 
+The total execution time of all the experiments is more than four months.
 
 <table class="tg">
 <thead>
@@ -217,7 +218,7 @@ Table below shows time spent by each of the approaches, separately in each of th
 
 To make sure our VM selection and configuration are appropriate for the selected subject applications and their workload, we run each service on each VM type in isolation. 
 Table below shows the average CPU and memory utilization on the smallest and largest VM types, VM1 and VM11, respectively. 
-As none of our VMs are overloaded by a single service, we believe our experiments are well-constructed.
+As none of our VMs are overloaded by a single service, we believe our experiments / VM selection is appropriate. 
 
 <table class="tg">
 <thead>
