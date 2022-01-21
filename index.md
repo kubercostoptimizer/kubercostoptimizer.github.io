@@ -17,4 +17,4 @@ Comparing Kuber with baseline approaches shows that Kuber is able to find the be
 
 ## Publication
 
-[Kuber: Cost-Efficient Microservice Deployment Planner](https://people.ece.ubc.ca/mjulia/publications/Kuber_2022.pdf) [<bibtex>](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/blob/main/kuber.bib)
+[Kuber: Cost-Efficient Microservice Deployment Planner](https://people.ece.ubc.ca/mjulia/publications/Kuber_2022.pdf)  [\<bibtex>](kuber.bib)
