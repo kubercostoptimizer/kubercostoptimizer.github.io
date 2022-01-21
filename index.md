@@ -17,15 +17,4 @@ Comparing Kuber with baseline approaches shows that Kuber is able to find the be
 
 ## Publication
 
-[Kuber: Cost-Efficient Microservice Deployment Planner](https://people.ece.ubc.ca/mjulia/publications/Kuber_2022.pdf)
-
-## Bibtex
-
-```bibtex
-@inproceedings{Kadiyala:Misail:Rubin:Kuber:SANER:2022,
-  author    = {Harshavardhan Kadiyala and Alberto Misail and Julia Rubin},
-  title     = {Kuber: Cost-Efficient Microservice Deployment Planner},
-  booktitle = {IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
-  year      = {2022},
-}
-```
+[Kuber: Cost-Efficient Microservice Deployment Planner](https://people.ece.ubc.ca/mjulia/publications/Kuber_2022.pdf) [<bibtex>](https://github.com/kubercostoptimizer/kubercostoptimizer.github.io/blob/main/kuber.bib)
