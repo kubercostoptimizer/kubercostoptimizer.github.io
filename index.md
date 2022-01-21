@@ -24,7 +24,7 @@ Comparing Kuber with baseline approaches shows that Kuber is able to find the be
 ```bibtex
 @inproceedings{Kadiyala:Misail:Rubin:Kuber:SANER:2022,
   author    = {Harshavardhan Kadiyala and Alberto Misail and Julia Rubin},
-  title     = {{Kuber: Cost-Efficient Microservice Deployment Planner}},
+  title     = {Kuber: Cost-Efficient Microservice Deployment Planner},
   booktitle = {IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
   year      = {2022},
 }
