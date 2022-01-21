@@ -18,3 +18,16 @@ Comparing Kuber with baseline approaches shows that Kuber is able to find the be
 ## Publication
 
 [Kuber: Cost-Efficient Microservice Deployment Planner](https://people.ece.ubc.ca/mjulia/publications/Kuber_2022.pdf)
+
+## Bibtex
+
+```
+@inproceedings{Ahmed:Lis:Rubin:Slicer4J:FSE:2021,
+  author    = {Khaled Ahmed and
+               Mieszko Lis and
+               Julia Rubin},
+  title     = {{Slicer4J: A Dynamic Slicer for Java}},
+  booktitle = {The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)},
+  year      = {2021},
+}
+```
