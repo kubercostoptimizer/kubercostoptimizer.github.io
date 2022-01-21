@@ -22,12 +22,10 @@ Comparing Kuber with baseline approaches shows that Kuber is able to find the be
 ## Bibtex
 
 ```
-@inproceedings{Ahmed:Lis:Rubin:Slicer4J:FSE:2021,
-  author    = {Khaled Ahmed and
-               Mieszko Lis and
-               Julia Rubin},
-  title     = {{Slicer4J: A Dynamic Slicer for Java}},
-  booktitle = {The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)},
-  year      = {2021},
+@inproceedings{Kadiyala:Misail:Rubin:Kuber:SANER:2022,
+  author    = {Harshavardhan Kadiyala and Alberto Misail and Julia Rubin},
+  title     = {{Kuber: Cost-Efficient Microservice Deployment Planner}},
+  booktitle = {IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+  year      = {2022},
 }
 ```
