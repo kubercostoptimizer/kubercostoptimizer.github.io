@@ -15,6 +15,6 @@ of all possible service combinations and further identifying the optimal subset 
 services. To address this problem, we propose an approach, called Kuber, which utilizes a set of strategies to efficiently sample the necessary subset of service combination and VM types to explore.
 Comparing Kuber with baseline approaches shows that Kuber is able to find the best deployment with the lowest search cost.
 
----
+## Publication
 
-This repository contains artifacts used to perform the experiments defined within the paper. We tried our best to anonymize all information which can be related back to the authors of the paper.
+[Kuber: Cost-Efficient Microservice Deployment Planner](https://people.ece.ubc.ca/mjulia/publications/Kuber_2022.pdf)
